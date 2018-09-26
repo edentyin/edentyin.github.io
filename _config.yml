@@ -43,10 +43,22 @@ highlighter: rouge
 
 #### Markdown Processors
 ## 'redcarpet' is unsupported on GitHub Pages now.
-markdown: kramdown
+markdown : kramdown 
+highlighter : rouge
 kramdown:
-    input: GFM
-
+  input : GFM
+  syntax_highlighter: rouge
+  #use_coderay : true
+  #auto_ids :                  true
+  #footnote_nr :               1
+  #entity_output :             as_char
+  toc_levels :                1..6
+  #smart_quotes :              lsquo,rsquo,ldquo,rdquo
+  #enable_coderay :            false
+  #hard_wrap :                 false
+  #syntax_highlighter :        rouge
+  #transliterated_header_ids : true
+  #footnote_backlink :         "&#8617;&#xfe0e;
 # Default Attributes
 ## Docs: https://jekyllrb.com/docs/configuration/#front-matter-defaults
 defaults:
@@ -211,8 +223,10 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
+social:
   #LinkLabel: Link
+  Weibo : https://weibo.com/edentyin
+
 
 
 # Social Links Icons
